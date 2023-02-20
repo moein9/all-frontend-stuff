@@ -1,0 +1,128 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Open Sans";
+  background-color: #090a0c;
+}
+/*navbar*/
+
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  background-color: #090a0c;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  flex-direction: row-reverse;
+}
+
+nav ul li {
+  padding: 15px;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+/*--navbar--*/
+/*BY MOEIN*/
+
+/*main*/
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+}
+
+#h-title {
+  grid-column: 1/5;
+  font-size: 30px;
+  background-color: #090a0c;
+  border: rgb(73, 69, 69) solid;
+  font-style: #fff;
+  color: #fff;
+  justify-self: center;
+  text-align: center;
+}
+
+.search {
+  grid-column: 1/5;
+  justify-self: center;
+  text-align: center;
+}
+
+.search input {
+  color: rgb(0, 0, 0);
+  background-color: #fff;
+  border-radius: 3rem;
+}
+
+.h-card {
+  padding: 4rem;
+  overflow: scroll;
+  background-color: #090a0c;
+  border: rgb(148, 87, 87);
+  border-radius: 30px;
+  z-index: 100;
+}
+
+.h-card h3,
+p,
+h4 {
+  color: aliceblue;
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  width: 20vw;
+}
+
+.h-card img {
+  border-radius: 3rem;
+}
+/*-main-*/
+
+footer {
+  position: sticky;
+  grid-row: 3;
+  padding: 10px;
+  background-color: #090a0c;
+}
+
+@media only screen and (max-width: 700px) {
+  .title {
+    z-index: 100;
+    position: absolute;
+    color: rgb(222, 255, 255);
+    justify-content: center;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-weight: 100;
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  main {
+    grid-template-rows: auto auto auto auto;
+  }
+
+  h3,
+  p {
+    padding: 5px;
+    margin: 5px;
+    font-size: 15px;
+    font-weight: 100;
+  }
+}
